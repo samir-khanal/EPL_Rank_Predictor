@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Rank Prediction API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #121212;
+            color: white;
+            margin: 50px;
+        }
+        h1 {
+            color: #f5a623;
+        }
+        p {
+            font-size: 18px;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            background: #1e1e1e;
+        }
+        a {
+            color: #f5a623;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚽ Football Rank Prediction API</h1>
+        <p>Welcome to the Football Rank Prediction API.</p>
+        <p>This API predicts the ranking of an EPL football team based on its performance stats.</p>
+        <p>Use the `/predict` endpoint to get predictions.</p>
+        
+        <h3>🔗 API Endpoints:</h3>
+        <p>➡ <b>GET</b> <code>/</code> - Home</p>
+        <p>➡ <b>POST</b> <code>/predict</code> - Send JSON data to get predictions</p>
+        
+        <h3>📄 Example Request:</h3>
+        <pre>
+{
+  "method": "All Stats",
+  "W": 20,
+  "D": 10,
+  "L": 8,
+  "GF": 70,
+  "GA": 30,
+  "Pts": 70,
+  "Sh": 500
+}
+        </pre>
+        
+        <p>Try sending a request using **Postman** or any API testing tool.</p>
+        <p>Check the frontend at: <a href="http://localhost:8501" target="_blank">Streamlit App</a></p>
+    </div>
+</body>
+</html>
