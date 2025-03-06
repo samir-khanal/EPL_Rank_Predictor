@@ -10,17 +10,11 @@
     "routes": [
         { "src": "/(.*)", "dest": "server.py" }
     ],
-    "build": {
-        "env": {
-            "PIP_NO_CACHE_DIR": "off",
-            "PIP_DISABLE_PIP_VERSION_CHECK": "1",
-            "CARGO_HOME": "/tmp/cargo",
-            "RUSTUP_HOME": "/tmp/rustup"
-        },
-        "commands": [
-            "curl https://sh.rustup.rs -sSf | sh -s -- -y",
-            "export PATH=$HOME/.cargo/bin:$PATH",
-            "pip install --no-cache-dir -r requirements.txt"
-        ]
+    "env": {
+        "PIP_NO_CACHE_DIR": "off",
+        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+        "CARGO_HOME": "/tmp/cargo",
+        "RUSTUP_HOME": "/tmp/rustup"
     }
 }
+
