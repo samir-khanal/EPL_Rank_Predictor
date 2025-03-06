@@ -9,12 +9,6 @@
     ],
     "routes": [
         { "src": "/(.*)", "dest": "server.py" }
-    ],
-    "env": {
-        "PIP_NO_CACHE_DIR": "off",
-        "PIP_DISABLE_PIP_VERSION_CHECK": "1",
-        "CARGO_HOME": "/tmp/cargo",
-        "RUSTUP_HOME": "/tmp/rustup"
-    }
+    ]
 }
 
