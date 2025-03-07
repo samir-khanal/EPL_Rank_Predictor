@@ -49,7 +49,8 @@ venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 ```
 ## Start Flask API:
-```python server.py
+```
+python server.py
 ```
 API will run at http://localhost:5000
 ### Launch Streamlit Frontend:
